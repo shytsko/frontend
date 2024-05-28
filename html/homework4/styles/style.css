@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    /* background-color: #e2b0b0; */
+    padding-top: 40px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    width: 533px;
+    justify-content: space-between;
+}
+
+.nav__link {
+    /* display: block; */
+    padding: 10px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.nav__link:hover {
+    color: #F25822;
+}
+
+
+
+.top {
+    padding-top: 84px;
+    padding-bottom: 162px;
+}
+
+.top__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__content__text {
+    width: 522px;
+}
+
+.top__content__title {
+    margin-bottom: 17px;
+    font-family: 'Gilroy-Bold';
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+}
+
+.text {
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.top__content__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 322px;
+    margin-top: 37px;
+}
+
+.top__content__button {
+    width: 140px;
+    height: 50px;
+
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    border-color: #F25822;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.top__content__button:hover {
+    background: #FFF;
+    color: #888888;
+    border-color: #FFF;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 97px;
+    background: #FFFFFF;
+}
