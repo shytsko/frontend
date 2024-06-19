@@ -97,9 +97,9 @@
    padding: 32px;
    display: none;
    flex-direction: column;
-   gap: 20px;
    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   left: -60px;
  }
 
  .menu__title {
@@ -109,14 +109,13 @@
    font-size: 14px;
    line-height: 17px;
    color: #000000;
-   margin-left: 1px;
-   margin-bottom: 4px;
+   padding-bottom: 4px;
  }
 
  .menu__category {
    display: flex;
    flex-direction: column;
-   gap: 11px;
+   margin-top: 20px;
  }
 
  .menu__category__title {
@@ -126,10 +125,16 @@
    font-size: 14px;
    line-height: 17px;
    color: #F16D7F;
-   margin-bottom: 1px;
+   margin-bottom: 12px;
  }
 
- .menu__subcategory {
+ .menu__category__list {
+   display: flex;
+   flex-direction: column;
+   gap: 11px;
+ }
+
+ .menu__category__list__item {
    font-family: 'Lato';
    font-style: normal;
    font-weight: 400;
@@ -140,7 +145,7 @@
    list-style-type: none;
  }
 
- .menu__subcategory:hover {
+ .menu__category__list__item:hover {
    background-color: #f3d8d8;
  }
 
@@ -512,7 +517,9 @@
    border: none;
    background: #e1e1e1;
    padding-left: 22px;
+   padding-right: 22px;
    border-radius: 24px 0 0 24px;
+   outline: none;
    color: #222224;
    opacity: 0.67;
  }
@@ -523,6 +530,15 @@
    color: #ffffff;
    background-color: #d73c3c;
    border-radius: 0 24px 24px 0;
+ }
+
+ #subscribe__button__submit:hover {
+   box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+ }
+
+ #subscribe__button__submit:active {
+   background-color: #ffffff;
+   color: #d73c3c;
  }
 
  .footer {
@@ -702,6 +718,10 @@
      margin-bottom: 26px;
    }
 
+   .menu {
+     left: -200px;
+   }
+
    .top_wrap {
      min-height: 363px;
      justify-content: center;
@@ -784,6 +804,10 @@
      line-height: 22px;
    }
 
+   .subscribe__form {
+     min-width: 341px;
+   }
+
    .subscribe__form__title {
      font-size: 24px;
      line-height: 153.2%;
@@ -802,6 +826,7 @@
    #subscribe__input__email {
      width: 245px;
      padding-left: 21px;
+     padding-right: 21px;
      border-radius: 23px 0 0 23px;
    }
 
