@@ -16,7 +16,7 @@
     <header class="header">
       <div class="headder_wrap container">
         <nav class="header__nav__left">
-          <a href="#"><img src="img/icon_logo.svg" alt="logo" /></a>
+          <a href="/"><img src="img/icon_logo.svg" alt="logo" /></a>
           <a href="#"><img src="img/icon_search.svg" alt="search" /></a>
         </nav>
         <nav class="header__nav__right">
@@ -24,29 +24,37 @@
             <img src="img/icon_menu.svg" alt="menu" />
             <div class="menu">
               <h3 class="menu__title">MENU</h3>
-              <ul class="menu__category">
+
+              <div class="menu__category">
                 <h4 class="menu__category__title">MAN</h4>
-                <li class="menu__subcategory">Accessories</li>
-                <li class="menu__subcategory">Bags</li>
-                <li class="menu__subcategory">Denim</li>
-                <li class="menu__subcategory">T-Shirts</li>
-              </ul>
-              <ul class="menu__category">
+                <ul class="menu__category__list">
+                  <li class="menu__category__list__item">Accessories</li>
+                  <li class="menu__category__list__item">Bags</li>
+                  <li class="menu__category__list__item">Denim</li>
+                  <li class="menu__category__list__item">T-Shirts</li>
+                </ul>
+              </div>
+              <div class="menu__category">
                 <h4 class="menu__category__title">WOMAN</h4>
-                <li class="menu__subcategory">Accessories</li>
-                <li class="menu__subcategory">Jackets &amp; Coats</li>
-                <li class="menu__subcategory">Polos</li>
-                <li class="menu__subcategory">T-Shirts</li>
-                <li class="menu__subcategory">Shirts</li>
-              </ul>
-              <ul class="menu__category">
-                <h4 class="menu__category__title">KIDS</h4>
-                <li class="menu__subcategory">Accessories</li>
-                <li class="menu__subcategory">Jackets &amp; Coats</li>
-                <li class="menu__subcategory">Polos</li>
-                <li class="menu__subcategory">T-Shirts</li>
-                <li class="menu__subcategory">Shirts</li>
-                <li class="menu__subcategory">Bags</li>
+                <ul class="menu__category__list">
+                  <li class="menu__category__list__item">Accessories</li>
+                  <li class="menu__category__list__item">
+                    Jackets &amp; Coats
+                  </li>
+                  <li class="menu__category__list__item">Polos</li>
+                  <li class="menu__category__list__item">T-Shirts</li>
+                  <li class="menu__category__list__item">Shirts</li>
+                </ul>
+              </div>
+              <div class="menu__category"></div>
+              <h4 class="menu__category__title">KIDS</h4>
+              <ul class="menu__category__list">
+                <li class="menu__category__list__item">Accessories</li>
+                <li class="menu__category__list__item">Jackets &amp; Coats</li>
+                <li class="menu__category__list__item">Polos</li>
+                <li class="menu__category__list__item">T-Shirts</li>
+                <li class="menu__category__list__item">Shirts</li>
+                <li class="menu__category__list__item">Bags</li>
               </ul>
             </div>
           </div>
@@ -73,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section class="categories">
+    <div class="categories">
       <div class="categories_wrap container">
         <article class="categories__item categories__women">
           <p class="categories__item__text">30% OFF</p>
@@ -92,7 +100,7 @@
           <h4 class="categories__item__title">ACCESORIES</h4>
         </article>
       </div>
-    </section>
+    </div>
     <section class="catalog">
       <div class="catalog_wrap container">
         <h3 class="catalog__title">Fetured Items</h3>
@@ -101,15 +109,15 @@
         </p>
         <div class="catalog__cards">
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_1.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
               <p class="catalog__card__text">
@@ -121,15 +129,15 @@
             </div>
           </article>
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_2.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
 
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
@@ -142,15 +150,15 @@
             </div>
           </article>
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_3.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
 
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
@@ -163,15 +171,15 @@
             </div>
           </article>
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_4.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
               <p class="catalog__card__text">
@@ -183,15 +191,15 @@
             </div>
           </article>
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_5.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
               <p class="catalog__card__text">
@@ -203,15 +211,15 @@
             </div>
           </article>
           <article class="catalog__card">
-            <picture class="catalog__card__img">
+            <div class="catalog__card__img">
               <img src="img/catalog_img_6.png" alt="Catalog image" />
               <div class="catalog__card__img__filter">
                 <button class="catalog__card__add-cart-button">
-                  <img src="img/icon_cart.svg" width="26px" alt="Cart" />
+                  <img src="img/icon_cart.svg" width="26" alt="Cart" />
                   Add to Cart
                 </button>
               </div>
-            </picture>
+            </div>
             <div class="calalog__card__description">
               <h4 class="catalog__card__title">ELLERY X M'O CAPSULE</h4>
               <p class="catalog__card__text">
@@ -226,7 +234,7 @@
         <button class="catalog__button">Browse All Product</button>
       </div>
     </section>
-    <section class="advantages">
+    <div class="advantages">
       <div class="advantages_wrap container">
         <article class="advantages__item">
           <svg
@@ -290,7 +298,7 @@
           </p>
         </article>
       </div>
-    </section>
+    </div>
     <section class="subscribe">
       <div class="subscribe_wrap container">
         <div class="subscribe__picture">
