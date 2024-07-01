@@ -21,6 +21,13 @@ body {
   box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -93,6 +100,7 @@ img {
   flex-direction: column;
   animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   left: -60px;
+  z-index: 999;
 }
 .menu__title {
   font-weight: 700;

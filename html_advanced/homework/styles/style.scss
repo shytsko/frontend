@@ -44,6 +44,13 @@
   box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 body {
   @extend %font-main
 }
@@ -130,6 +137,7 @@ img {
   -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   left: -60px;
+  z-index: 999;
 
   &__title {
     font-weight: 700;
