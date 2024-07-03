@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/d39e8f32a3.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
@@ -21,42 +25,79 @@
         </nav>
         <nav class="header__nav__right">
           <div class="header__nav__right__menu">
-            <img src="img/icon_menu.svg" alt="menu" />
-            <div class="menu">
+            <input
+              class="header__nav__right__menu__checkbox"
+              type="checkbox"
+              name="menu"
+              id="menu"
+            />
+            <label for="menu"><img src="img/icon_menu.svg" alt="menu" /></label>
+            <nav class="menu">
+              <label class="menu__close" for="menu"
+                ><i class="fa-solid fa-xmark"></i
+              ></label>
               <h3 class="menu__title">MENU</h3>
-
               <div class="menu__category">
                 <h4 class="menu__category__title">MAN</h4>
                 <ul class="menu__category__list">
-                  <li class="menu__category__list__item">Accessories</li>
-                  <li class="menu__category__list__item">Bags</li>
-                  <li class="menu__category__list__item">Denim</li>
-                  <li class="menu__category__list__item">T-Shirts</li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Bag</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Denim</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">T-Shirts</a>
+                  </li>
                 </ul>
               </div>
               <div class="menu__category">
                 <h4 class="menu__category__title">WOMAN</h4>
                 <ul class="menu__category__list">
-                  <li class="menu__category__list__item">Accessories</li>
                   <li class="menu__category__list__item">
-                    Jackets &amp; Coats
+                    <a href="#">Accessories</a>
                   </li>
-                  <li class="menu__category__list__item">Polos</li>
-                  <li class="menu__category__list__item">T-Shirts</li>
-                  <li class="menu__category__list__item">Shirts</li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Jackets &amp; Coats</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Polos</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Shirts</a>
+                  </li>
                 </ul>
               </div>
-              <div class="menu__category"></div>
-              <h4 class="menu__category__title">KIDS</h4>
-              <ul class="menu__category__list">
-                <li class="menu__category__list__item">Accessories</li>
-                <li class="menu__category__list__item">Jackets &amp; Coats</li>
-                <li class="menu__category__list__item">Polos</li>
-                <li class="menu__category__list__item">T-Shirts</li>
-                <li class="menu__category__list__item">Shirts</li>
-                <li class="menu__category__list__item">Bags</li>
-              </ul>
-            </div>
+              <div class="menu__category">
+                <h4 class="menu__category__title">KIDS</h4>
+                <ul class="menu__category__list">
+                  <li class="menu__category__list__item">
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Jackets &amp; Coats</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Polos</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Shirts</a>
+                  </li>
+                  <li class="menu__category__list__item">
+                    <a href="#">Bags</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
           <a class="header__nav__right__profile" href="#"
             ><img src="img/icon_profile.svg" alt="profile"

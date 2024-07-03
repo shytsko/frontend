@@ -1,42 +1,5 @@
 @import 'vars';
 
-@-webkit-keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -94,10 +57,15 @@ img {
       margin-bottom: 20px;
 
       &__menu {
-        position: relative;
 
-        &:hover .menu {
-          display: flex;
+        &__checkbox {
+          position: absolute;
+          left: -999999px;
+          visibility: hidden;
+        }
+
+        &__checkbox:checked~.menu {
+          transform: scaleX(1);
         }
       }
 
@@ -131,19 +99,29 @@ img {
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 232px;
-  padding: 32px;
-  display: none;
+  padding: 16px 16px 32px 32px;
+  display: flex;
   flex-direction: column;
-  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  left: -60px;
   z-index: 999;
+  top: 75px;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform .3s;
+  transform-origin: right;
+
+  &__close {
+    font-size: 15px;
+    line-height: 15px;
+    color: #6F6E6E;
+    align-self: flex-end;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    margin-top: 9px;
     padding-bottom: 4px;
   }
 
@@ -174,7 +152,7 @@ img {
         list-style-type: none;
 
         &:hover {
-          background-color: #f3d8d8;
+          color: $colorHighlight;
         }
       }
     }
@@ -728,10 +706,6 @@ img {
         }
       }
     }
-  }
-
-  .menu {
-    left: -200px;
   }
 
   .top {

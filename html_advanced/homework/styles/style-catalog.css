@@ -29,13 +29,13 @@
   font-weight: 700;
 }
 
-.catalog-slider {
+.product-slider {
   display: flex;
   justify-content: space-between;
   background-color: #F7F7F7;
   padding: 11px 20px 42px;
 }
-.catalog-slider__button {
+.product-slider__button {
   width: 47px;
   height: 47px;
   background-color: #EAEAEA;
@@ -44,14 +44,14 @@
   color: #000000;
   font-size: 22px;
 }
-.catalog-slider__button :hover {
+.product-slider__button :hover {
   color: #f16d7f;
 }
 
-.catalog-description {
+.product-description {
   margin-bottom: 16px;
 }
-.catalog-description__wrap {
+.product-description__wrap {
   padding: 65px 0;
   border: #EAEAEA solid 1px;
   display: flex;
@@ -60,25 +60,25 @@
   background-color: #fff;
   transform: translateY(-64px);
 }
-.catalog-description__category-title {
+.product-description__category-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #f16d7f;
 }
-.catalog-description__separator1 {
+.product-description__separator1 {
   width: 63px;
   border-top: 3px solid #EF5B70;
   margin: 12px 0;
 }
-.catalog-description__title {
+.product-description__title {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #4D4D4D;
   margin-bottom: 48px;
 }
-.catalog-description__text {
+.product-description__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -86,35 +86,35 @@
   color: #5E5E5E;
   max-width: 555px;
 }
-.catalog-description__price {
+.product-description__price {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #EF5B70;
   margin-top: 32px;
 }
-.catalog-description__separator2 {
+.product-description__separator2 {
   width: 642px;
   border-top: 1px solid #EAEAEA;
   margin: 64px 0;
 }
-.catalog-description__filter {
+.product-description__filter {
   display: flex;
   gap: 23px;
 }
-.catalog-description__filter__item {
+.product-description__filter__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
 }
-.catalog-description__filter__item::after {
+.product-description__filter__item::after {
   content: "\f107";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   padding-left: 9px;
 }
-.catalog-description__button-add-to-cart {
+.product-description__button-add-to-cart {
   width: 212px;
   height: 48px;
   border: 1px solid #FF6A6A;
