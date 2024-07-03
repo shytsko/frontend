@@ -36,6 +36,150 @@
   }
 }
 
+.filter {
+  &__wrap {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 16px;
+  }
+
+  &__details {
+    width: 360px;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 999;
+    padding: 16px;
+
+
+    &[open] {
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__summary {
+      color: $colorHighlight;
+      margin-bottom: 16px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  &__summary {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__summary svg path {
+    fill: currentColor;
+  }
+
+
+  &__category {
+    &__head {
+      height: 37px;
+      border-left: 5px solid $colorHighlight;
+      border-bottom: 1px solid #EBEBEB;
+      display: flex;
+      align-items: center;
+      padding-left: 11px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+    }
+
+    &[open] .filter__category__head {
+      color: $colorHighlight;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      padding: 24px 16px 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+      list-style-type: none;
+
+      &__item {
+        &:hover {
+          color: $colorHighlight;
+        }
+      }
+    }
+  }
+
+  &__sort {
+    display: flex;
+    gap: 28px;
+    padding-top: 16px;
+
+    &__wrap {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    &__item {
+      &__summary {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+      }
+
+      &__summary::after {
+        content: "\f107";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        padding-left: 10px;
+      }
+
+      &__content {
+        position: absolute;
+        z-index: 999;
+        box-shadow: 6px 4px 35px 0px #00000036;
+        width: 79px;
+        margin-top: 5px;
+        margin-left: -9px;
+        padding: 7px 9px 11px;
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+    }
+  }
+
+}
+
 .product-slider {
   display: flex;
   justify-content: space-between;
