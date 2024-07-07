@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 * {
   margin: 0;
@@ -56,9 +57,9 @@ img {
   &__nav {
     &__left {
       display: flex;
+      align-items: flex-end;
       width: 111px;
       justify-content: space-between;
-      align-items: flex-end;
       margin-left: 1px;
       margin-top: 18px;
       margin-bottom: 19px;
@@ -66,9 +67,9 @@ img {
 
     &__right {
       display: flex;
-      width: 159px;
       justify-content: space-between;
       align-items: center;
+      width: 159px;
       margin-top: 26px;
       margin-bottom: 20px;
 
@@ -111,13 +112,12 @@ img {
 }
 
 .menu {
+  @include flex-column;
   position: absolute;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 232px;
   padding: 16px 16px 32px 32px;
-  display: flex;
-  flex-direction: column;
   z-index: 999;
   top: 75px;
   right: 0;
@@ -142,8 +142,7 @@ img {
   }
 
   &__category {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin-top: 20px;
 
     &__title {
@@ -155,8 +154,7 @@ img {
     }
 
     &__list {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 11px;
 
       &__item {
@@ -174,6 +172,43 @@ img {
     }
   }
 }
+
+.page-header {
+  background-color: #F8F3F4;
+
+  &__wrap {
+    min-height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorHighlight;
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+
+    &__item:not(:last-child)::after {
+      content: "/";
+      padding: 0 10px;
+    }
+
+    &__item:last-child {
+      color: $colorHighlight;
+      font-weight: 700;
+    }
+  }
+}
+
 
 .top {
   background-color: #f1e4e6;
@@ -226,10 +261,7 @@ img {
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -272,9 +304,7 @@ img {
 .catalog {
   &__wrap {
     margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
   }
 
   &__title {
@@ -308,6 +338,7 @@ img {
       position: relative;
 
       &__filter {
+        @include flex-center;
         position: absolute;
         top: 0;
         left: 0;
@@ -315,9 +346,6 @@ img {
         height: 100%;
         background: #3a3838;
         opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: opacity 0.3s linear;
 
         &:hover {
@@ -327,6 +355,7 @@ img {
     }
 
     &__add-cart-button {
+      @include flex-center;
       width: 139px;
       height: 44px;
       border: 1px solid #ffffff;
@@ -335,16 +364,12 @@ img {
       line-height: 17px;
       color: #ffffff;
       background: none;
-      display: flex;
       gap: 11px;
-      justify-content: center;
-      align-items: center;
     }
 
     &__description {
       padding: 25px 29px 20px 16px;
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       min-height: 167px;
     }
 
@@ -390,11 +415,9 @@ img {
     margin-bottom: 36px;
 
     &__button {
-      display: flex;
+      @include flex-center;
       height: 44px;
       min-width: 44px;
-      justify-content: center;
-      align-items: center;
       font-weight: 300;
       font-size: 16px;
       line-height: 19px;
@@ -420,9 +443,7 @@ img {
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     max-width: 360px;
     min-height: 134px;
 
@@ -680,18 +701,16 @@ img {
 
   .advantages {
     &__wrap {
+      @include flex-column-center;
       padding-top: 48px;
       padding-bottom: 64px;
-      flex-direction: column;
-      align-items: center;
       gap: 48px;
     }
   }
 
   .subscribe {
     &__wrap {
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
       padding-top: 64px;
       padding-bottom: 140px;
       gap: 48px;
@@ -779,10 +798,9 @@ img {
   .categories {
 
     &__wrap {
+      @include flex-column;
       margin-bottom: 64px;
       padding: 0 16px;
-      display: flex;
-      flex-direction: column;
       gap: 32px;
     }
 
@@ -803,9 +821,9 @@ img {
     }
 
     &__cards {
+      @include flex-column;
       margin: 64px 0 40px;
       display: flex;
-      flex-direction: column;
       gap: 16px;
     }
   }

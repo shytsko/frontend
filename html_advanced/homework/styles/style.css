@@ -51,18 +51,18 @@ img {
 }
 .header__nav__left {
   display: flex;
+  align-items: flex-end;
   width: 111px;
   justify-content: space-between;
-  align-items: flex-end;
   margin-left: 1px;
   margin-top: 18px;
   margin-bottom: 19px;
 }
 .header__nav__right {
   display: flex;
-  width: 159px;
   justify-content: space-between;
   align-items: center;
+  width: 159px;
   margin-top: 26px;
   margin-bottom: 20px;
 }
@@ -96,13 +96,13 @@ img {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 232px;
   padding: 16px 16px 32px 32px;
-  display: flex;
-  flex-direction: column;
   z-index: 999;
   top: 75px;
   right: 0;
@@ -153,6 +153,37 @@ img {
   color: #f16d7f;
 }
 
+.page-header {
+  background-color: #F8F3F4;
+}
+.page-header__wrap {
+  min-height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+.page-header__breadcrumbs {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.page-header__breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  padding: 0 10px;
+}
+.page-header__breadcrumbs__item:last-child {
+  color: #f16d7f;
+  font-weight: 700;
+}
+
 .top {
   background-color: #f1e4e6;
 }
@@ -197,9 +228,9 @@ img {
 }
 .categories__item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -235,8 +266,9 @@ img {
 .catalog__wrap {
   margin-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .catalog__title {
   font-weight: 400;
@@ -266,6 +298,9 @@ img {
   position: relative;
 }
 .catalog__card__img__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -273,15 +308,15 @@ img {
   height: 100%;
   background: #3a3838;
   opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: opacity 0.3s linear;
 }
 .catalog__card__img__filter:hover {
   opacity: 0.86;
 }
 .catalog__card__add-cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 139px;
   height: 44px;
   border: 1px solid #ffffff;
@@ -290,10 +325,7 @@ img {
   line-height: 17px;
   color: #ffffff;
   background: none;
-  display: flex;
   gap: 11px;
-  justify-content: center;
-  align-items: center;
 }
 .catalog__card__description {
   padding: 25px 29px 20px 16px;
@@ -339,10 +371,10 @@ img {
 }
 .catalog__pagination__button {
   display: flex;
-  height: 44px;
-  min-width: 44px;
   justify-content: center;
   align-items: center;
+  height: 44px;
+  min-width: 44px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -364,8 +396,9 @@ img {
 }
 .advantages__item {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   max-width: 360px;
   min-height: 134px;
 }
@@ -565,15 +598,19 @@ img {
     margin-bottom: 13px;
   }
   .advantages__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-top: 48px;
     padding-bottom: 64px;
-    flex-direction: column;
-    align-items: center;
     gap: 48px;
   }
   .subscribe__wrap {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-top: 64px;
     padding-bottom: 140px;
     gap: 48px;
@@ -636,10 +673,10 @@ img {
     line-height: 24px;
   }
   .categories__wrap {
-    margin-bottom: 64px;
-    padding: 0 16px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
+    padding: 0 16px;
     gap: 32px;
   }
   .categories__item {
@@ -654,9 +691,10 @@ img {
     padding: 0 8px;
   }
   .catalog__cards {
-    margin: 64px 0 40px;
     display: flex;
     flex-direction: column;
+    margin: 64px 0 40px;
+    display: flex;
     gap: 16px;
   }
   .advantages__wrap {
