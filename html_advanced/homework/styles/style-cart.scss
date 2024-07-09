@@ -2,6 +2,8 @@
 @import 'mixins';
 
 .animate-button {
+  cursor: pointer;
+
   &:hover {
     transform: scale(1.05);
     transition: transform .3s;
