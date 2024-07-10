@@ -43,6 +43,18 @@ img {
   max-width: 100%;
 }
 
+.animate-button {
+  cursor: pointer;
+}
+.animate-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.animate-button:active {
+  transform: scale(1);
+  transition: transform 0.1s;
+}
+
 .no-select {
   -webkit-user-select: none;
   -moz-user-select: none;

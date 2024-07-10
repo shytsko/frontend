@@ -1,15 +1,3 @@
-.animate-button {
-  cursor: pointer;
-}
-.animate-button:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
-.animate-button:active {
-  transform: scale(1);
-  transition: transform 0.1s;
-}
-
 .cart__wrap {
   padding-top: 96px;
   padding-bottom: 128px;
