@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/css/general.css" />
     <link rel="stylesheet" href="styles/css/header.css" />
     <link rel="stylesheet" href="styles/css/menu.css" />
+    <link rel="stylesheet" href="styles/css/subscribe.css" />
     <title>Home</title>
   </head>
   <body>
@@ -111,5 +112,37 @@
         </nav>
       </div>
     </header>
+    <section class="subscribe">
+      <div class="subscribe__wrap container">
+        <div class="subscribe__picture">
+          <img
+            class="subscribe__photo"
+            src="img/subscribe_photo.png"
+            alt="Subscribe photo"
+          />
+          <p class="subscribe__text">
+            &#8220;Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+            <span>a pulvinar purus condimentum</span>&#8221;
+          </p>
+        </div>
+        <div class="subscribe__form-box">
+          <h2 class="subscribe__form-title">SUBSCRIBE</h2>
+          <h3 class="subscribe__form-subtitle">
+            FOR OUR NEWLETTER AND PROMOTION
+          </h3>
+          <form class="subscribe__form" action="#">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              class="subscribe__input-email"
+            />
+            <button type="submit" class="subscribe__button-submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
