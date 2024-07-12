@@ -77,6 +77,62 @@
   color: #f16d7f;
 }
 
+.fetured-items__wrap {
+  margin-bottom: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fetured-items__wrap .product-list {
+  margin: 48px 0;
+}
+.fetured-items__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.fetured-items__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  text-align: center;
+}
+.fetured-items__button {
+  border: 1px solid #ff6a6a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  width: 212px;
+  height: 48px;
+  background-color: #ffffff;
+}
+.fetured-items__pagination {
+  border: 1px solid #EBEBEB;
+  display: flex;
+  margin-bottom: 36px;
+}
+.fetured-items__pagination__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  min-width: 44px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5D5D5D;
+  padding: 0 5px;
+}
+.fetured-items__pagination__button:hover {
+  color: #f16d7f;
+}
+
 @media (max-width: 1024px) {
   .top__image {
     margin: 0;
@@ -103,6 +159,15 @@
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 167px 116px;
+  }
+  .fetured-items__wrap {
+    margin-bottom: 65px;
+  }
+  .fetured-items__wrap .product-list {
+    margin: 72px 0 32px;
+  }
+  .fetured-items__title {
+    margin-bottom: 3px;
   }
 }
 @media (max-width: 767px) {
@@ -131,8 +196,8 @@
   .categories__wrap {
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
     padding: 0 16px;
+    margin-bottom: 64px;
     gap: 32px;
   }
   .categories__item {
@@ -140,5 +205,13 @@
   }
   .categories__item_accesories {
     min-height: 111px;
+  }
+  .fetured-items__wrap {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    padding: 0 8px;
+  }
+  .fetured-items__wrap .product-list {
+    margin: 64px 0 40px;
   }
 }/*# sourceMappingURL=home-page.css.map */

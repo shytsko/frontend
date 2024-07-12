@@ -1,6 +1,12 @@
 @import 'vars';
 @import 'mixins';
 
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .product-card {
     background-color: #f8f8f8;
     max-width: 360px;
@@ -67,5 +73,32 @@
         color: $colorHighlight;
         margin-bottom: 0;
         margin-top: auto;
+    }
+}
+
+
+@media (max-width: $maxWidthPad) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .product-card {
+        &__description {
+            min-height: 161px;
+        }
+
+        &__title {
+            margin-bottom: 13px;
+        }
+
+    }
+}
+
+@media (max-width: $maxWidthMobile) {
+    .product-list {
+        @include flex-column;
+        display: flex;
+        gap: 16px;
     }
 }

@@ -94,6 +94,67 @@
 }
 
 
+
+.fetured-items {
+    &__wrap {
+        margin-bottom: 95px;
+        @include flex-column-center;
+
+        & .product-list {
+            margin: 48px 0;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9f9f9f;
+        text-align: center;
+    }
+
+    &__button {
+        border: 1px solid #ff6a6a;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f26376;
+        width: 212px;
+        height: 48px;
+        background-color: #ffffff;
+    }
+
+    &__pagination {
+        border: 1px solid #EBEBEB;
+        display: flex;
+        margin-bottom: 36px;
+
+        &__button {
+            @include flex-center;
+            height: 44px;
+            min-width: 44px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #5D5D5D;
+            padding: 0 5px;
+
+            &:hover {
+                color: $colorHighlight;
+            }
+        }
+    }
+}
+
 @media (max-width: $maxWidthPad) {
     .top {
         &__image {
@@ -130,7 +191,23 @@
         }
     }
 
+
+    .fetured-items {
+        &__wrap {
+            margin-bottom: 65px;
+
+            & .product-list {
+                margin: 72px 0 32px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 3px;
+        }
+    }
+
 }
+
 
 @media (max-width: $maxWidthMobile) {
     .top {
@@ -165,8 +242,8 @@
     .categories {
         &__wrap {
             @include flex-column;
-            margin-bottom: 64px;
             padding: 0 16px;
+            margin-bottom: 64px;
             gap: 32px;
         }
 
@@ -177,5 +254,18 @@
                 min-height: 111px;
             }
         }
+    }
+
+    .fetured-items {
+        &__wrap {
+            margin-top: 64px;
+            margin-bottom: 96px;
+            padding: 0 8px;
+
+            & .product-list {
+                margin: 64px 0 40px;
+            }
+        }
+
     }
 }
