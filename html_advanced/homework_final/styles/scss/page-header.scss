@@ -1,0 +1,38 @@
+@import 'vars';
+@import 'mixins';
+
+.page-header {
+    background-color: #F8F3F4;
+
+    &__wrap {
+        min-height: 148px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorHighlight;
+    }
+
+    &__breadcrumbs {
+        display: flex;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+
+        &__item:not(:last-child)::after {
+            content: "/";
+            padding: 0 10px;
+        }
+
+        &__item:last-child {
+            color: $colorHighlight;
+            font-weight: 700;
+        }
+    }
+}

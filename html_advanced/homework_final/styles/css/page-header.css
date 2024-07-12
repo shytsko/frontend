@@ -1,0 +1,30 @@
+.page-header {
+  background-color: #F8F3F4;
+}
+.page-header__wrap {
+  min-height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+.page-header__breadcrumbs {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.page-header__breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  padding: 0 10px;
+}
+.page-header__breadcrumbs__item:last-child {
+  color: #f16d7f;
+  font-weight: 700;
+}/*# sourceMappingURL=page-header.css.map */
