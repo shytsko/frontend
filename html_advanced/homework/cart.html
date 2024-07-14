@@ -13,21 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/style-cart.css" />
+    <!-- General styles -->
+    <link rel="stylesheet" href="styles/css/general.css" />
+    <link rel="stylesheet" href="styles/css/header.css" />
+    <link rel="stylesheet" href="styles/css/menu.css" />
+    <link rel="stylesheet" href="styles/css/subscribe.css" />
+    <link rel="stylesheet" href="styles/css/footer.css" />
+    <link rel="stylesheet" href="styles/css/page-header.css" />
+    <!------------------->
+    <link rel="stylesheet" href="styles/css/cart-page.css" />
     <title>Cart</title>
   </head>
   <body>
     <header class="header">
       <div class="header__wrap container">
-        <nav class="header__nav__left">
+        <nav class="header__nav-left">
           <a href="/"><img src="img/icon_logo.svg" alt="logo" /></a>
           <a href="#"><img src="img/icon_search.svg" alt="search" /></a>
         </nav>
-        <nav class="header__nav__right">
-          <div class="header__nav__right__menu">
+        <nav class="header__nav-right">
+          <div class="header__menu">
             <input
-              class="header__nav__right__menu__checkbox"
+              class="header__menu-checkbox"
               type="checkbox"
               name="menu"
               id="menu"
@@ -38,78 +45,74 @@
                 ><i class="fa-solid fa-xmark"></i
               ></label>
               <h3 class="menu__title">MENU</h3>
-              <div class="menu__category">
-                <h4 class="menu__category__title">MAN</h4>
-                <ul class="menu__category__list">
-                  <li class="menu__category__list__item">
+              <div class="menu__category-box">
+                <h4 class="menu__category-title">MAN</h4>
+                <ul class="menu__category-list">
+                  <li class="menu__category-item">
                     <a href="#">Accessories</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Bag</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Denim</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">T-Shirts</a>
                   </li>
                 </ul>
               </div>
-              <div class="menu__category">
-                <h4 class="menu__category__title">WOMAN</h4>
-                <ul class="menu__category__list">
-                  <li class="menu__category__list__item">
+              <div class="menu__category-box">
+                <h4 class="menu__category-title">WOMAN</h4>
+                <ul class="menu__category-list">
+                  <li class="menu__category-item">
                     <a href="#">Accessories</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Jackets &amp; Coats</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Polos</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">T-Shirts</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Shirts</a>
                   </li>
                 </ul>
               </div>
-              <div class="menu__category">
-                <h4 class="menu__category__title">KIDS</h4>
-                <ul class="menu__category__list">
-                  <li class="menu__category__list__item">
+              <div class="menu__category-box">
+                <h4 class="menu__category-title">KIDS</h4>
+                <ul class="menu__category-list">
+                  <li class="menu__category-item">
                     <a href="#">Accessories</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Jackets &amp; Coats</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Polos</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">T-Shirts</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Shirts</a>
                   </li>
-                  <li class="menu__category__list__item">
+                  <li class="menu__category-item">
                     <a href="#">Bags</a>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
-          <a class="header__nav__right__profile" href="#"
+          <a class="header__profile" href="#"
             ><img src="img/icon_profile.svg" alt="profile"
           /></a>
-          <a class="header__nav__right__cart" href="#"
-            ><img
-              class="header__nav__right__cart__icon"
-              src="img/icon_cart.svg"
-              alt="cart"
-            />
-            <div class="header__nav__right__cart__counter">5</div></a
+          <a class="header__cart" href="#"
+            ><img src="img/icon_cart.svg" alt="cart" />
+            <div class="header__cart-counter">5</div></a
           >
         </nav>
       </div>
@@ -124,18 +127,18 @@
         <div class="cart__list">
           <article class="cart__item">
             <img
-              class="cart__item__img"
+              class="cart__item-img"
               src="img/catalog_img_3.png"
               alt="Product image"
             />
-            <div class="cart__item__description">
-              <h4 class="cart__item__title">MANGO PEOPLE T&#8209;SHIRT</h4>
-              <p class="cart__item__text">
+            <div class="cart__item-description">
+              <h4 class="cart__item-title">MANGO PEOPLE T&#8209;SHIRT</h4>
+              <p class="cart__item-text">
                 Price: <span class="highlighted">$300</span>
               </p>
-              <p class="cart__item__text">Color: Red</p>
-              <p class="cart__item__text">Size: Xl</p>
-              <p class="cart__item__text">
+              <p class="cart__item-text">Color: Red</p>
+              <p class="cart__item-text">Size: Xl</p>
+              <p class="cart__item-text">
                 Quantity:
                 <input
                   name="quantity-item1"
@@ -146,10 +149,8 @@
                 />
               </p>
             </div>
-            <button class="cart__item__button-del" id="delete-item1">
+            <button class="cart__item-del" id="delete-item1">
               <svg
-                width="18"
-                height="18"
                 viewBox="0 0 18 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -163,18 +164,18 @@
           </article>
           <article class="cart__item">
             <img
-              class="cart__item__img"
+              class="cart__item-img"
               src="img/catalog_img_7.png"
               alt="Product image"
             />
-            <div class="cart__item__description">
-              <h4 class="cart__item__title">MANGO PEOPLE T&#8209;SHIRT</h4>
-              <p class="cart__item__text">
+            <div class="cart__item-description">
+              <h4 class="cart__item-title">MANGO PEOPLE T&#8209;SHIRT</h4>
+              <p class="cart__item-text">
                 Price: <span class="highlighted">$300</span>
               </p>
-              <p class="cart__item__text">Color: Red</p>
-              <p class="cart__item__text">Size: Xl</p>
-              <p class="cart__item__text">
+              <p class="cart__item-text">Color: Red</p>
+              <p class="cart__item-text">Size: Xl</p>
+              <p class="cart__item-text">
                 Quantity:
                 <input
                   name="quantity-item2"
@@ -185,10 +186,8 @@
                 />
               </p>
             </div>
-            <button class="cart__item__button-del" id="delete-item2">
+            <button class="cart__item-del" id="delete-item2">
               <svg
-                width="18"
-                height="18"
                 viewBox="0 0 18 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,52 +199,44 @@
               </svg>
             </button>
           </article>
-          <div class="cart__list__buttons-box">
-            <button class="cart__list__button animate-button">
+          <div class="cart__buttons-box">
+            <button class="cart__button animate-button">
               CLEAR SHOPPING CART
             </button>
-            <button class="cart__list__button animate-button">
+            <button class="cart__button animate-button">
               CONTINUE SHOPPING
             </button>
           </div>
         </div>
-        <div class="cart__forms">
-          <form class="cart__form-shipping" action="#">
-            <h4 class="cart__form-shipping__title">SHIPPING ADRESS</h4>
+        <div class="forms-box">
+          <form class="form-shipping" action="#">
+            <h4 class="form-shipping__title">SHIPPING ADRESS</h4>
             <input
               type="text"
-              class="cart__form-shipping__input"
+              class="form-shipping__input"
               placeholder="Counry"
             />
             <input
               type="text"
-              class="cart__form-shipping__input"
+              class="form-shipping__input"
               placeholder="State"
             />
             <input
               type="text"
-              class="cart__form-shipping__input"
+              class="form-shipping__input"
               placeholder="Postcode / Zip"
             />
-            <button
-              type="submit"
-              class="cart__form-shipping__button animate-button"
-            >
+            <button type="submit" class="form-shipping__button animate-button">
               GET A QUOTE
             </button>
           </form>
-          <form action="#" class="cart__form-checkout">
-            <p class="cart__form-checkout__subtotal">
-              SUB TOTAL<span>$900</span>
-            </p>
-            <p class="cart__form-checkout__grandtotal">
+          <form action="#" class="form-checkout">
+            <p class="form-checkout__subtotal">SUB TOTAL<span>$900</span></p>
+            <p class="form-checkout__grandtotal">
               GRAND TOTAL<span>$900</span>
             </p>
-            <div class="cart__form-checkout__separator"></div>
-            <button
-              class="cart__form-checkout__button animate-button"
-              type="submit"
-            >
+            <div class="form-checkout__separator"></div>
+            <button class="form-checkout__button animate-button" type="submit">
               PROCEED TO CHECKOUT
             </button>
           </form>
@@ -256,28 +247,28 @@
       <div class="subscribe__wrap container">
         <div class="subscribe__picture">
           <img
-            class="subscribe__picture__img"
+            class="subscribe__photo"
             src="img/subscribe_photo.png"
             alt="Subscribe photo"
           />
-          <p class="subscribe__picture__text">
+          <p class="subscribe__text">
             &#8220;Vestibulum quis porttitor dui! Quisque viverra nunc mi,
             <span>a pulvinar purus condimentum</span>&#8221;
           </p>
         </div>
-        <div class="subscribe__form">
-          <h2 class="subscribe__form__title">SUBSCRIBE</h2>
-          <h3 class="subscribe__form__subtitle">
+        <div class="subscribe__form-box">
+          <h2 class="subscribe__form-title">SUBSCRIBE</h2>
+          <h3 class="subscribe__form-subtitle">
             FOR OUR NEWLETTER AND PROMOTION
           </h3>
-          <form class="subscribe__form__form" action="#">
+          <form class="subscribe__form" action="#">
             <input
               type="email"
               name="email"
               placeholder="Enter Your Email"
-              class="subscribe__form__form__input-email"
+              class="subscribe__input-email"
             />
-            <button type="submit" class="subscribe__form__form__button-submit">
+            <button type="submit" class="subscribe__button-submit">
               Subscribe
             </button>
           </form>
@@ -289,10 +280,10 @@
         <div class="footer__copyright">
           &copy; 2022 Brand All Rights Reserved.
         </div>
-        <nav class="footer__socials">
+        <nav class="footer__social-box">
           <a href="#">
             <svg
-              class="footer__socials__icon"
+              class="footer__social-icon"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -307,7 +298,7 @@
           </a>
           <a href="#">
             <svg
-              class="footer__socials__icon"
+              class="footer__social-icon"
               width="33"
               height="32"
               viewBox="0 0 33 32"
@@ -334,7 +325,7 @@
           </a>
           <a href="#">
             <svg
-              class="footer__socials__icon"
+              class="footer__social-icon"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -361,7 +352,7 @@
           </a>
           <a href="#">
             <svg
-              class="footer__socials__icon"
+              class="footer__social-icon"
               width="32"
               height="32"
               viewBox="0 0 32 32"
