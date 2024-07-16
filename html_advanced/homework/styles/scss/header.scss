@@ -28,7 +28,6 @@
         margin-bottom: 20px;
     }
 
-
     &__menu-checkbox {
         position: absolute;
         left: -999999px;
@@ -62,7 +61,6 @@
     }
 }
 
-
 @media (max-width: $maxWidthPad) {
     .header {
         &__nav-left {
@@ -81,7 +79,6 @@
         }
     }
 }
-
 
 @media (max-width: $maxWidthMobile) {
     .header {
