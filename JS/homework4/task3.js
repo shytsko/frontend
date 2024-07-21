@@ -36,13 +36,29 @@ const isContains = (array, value) => {
     return array.indexOf(value) !== -1;
 }
 
+const sumArray2 = (array) => {
+    return array.reduce((sum, item) => sum + item, 0);
+}
+
+const minValue2 = (array) => {
+    return array.reduce((min, item) => item < min ? item : min, Infinity);
+}
+
+const isContains2 = (array, value) => {
+    return array.includes(value);
+}
+
 const arr = [];
+const num = 3;
 
 addRandomValues(arr, 5);
 console.log(`Создан массив: ${arr}`);
+
 console.log(`Сумма элементов: ${sumArray(arr)}`);
 console.log(`Минимальное число: ${minValue(arr)}`);
-
-
-const num = 3;
 console.log(isContains(arr, num) ? `Число ${num} есть в массиве` : `Числа ${num} нет в массиве`);
+
+console.log("----- Второй вариант -----");
+console.log(`Сумма элементов: ${sumArray2(arr)}`);
+console.log(`Минимальное число: ${minValue2(arr)}`);
+console.log(isContains2(arr, num) ? `Число ${num} есть в массиве` : `Числа ${num} нет в массиве`);
