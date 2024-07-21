@@ -32,21 +32,13 @@ const minValue = (array) => {
     return min;
 }
 
-const isContains = (array, value) => {
-    return array.indexOf(value) !== -1;
-}
+const isContains = (array, value) => array.indexOf(value) !== -1;
 
-const sumArray2 = (array) => {
-    return array.reduce((sum, item) => sum + item, 0);
-}
+const sumArray2 = (array) => array.reduce((sum, item) => sum + item, 0);
 
-const minValue2 = (array) => {
-    return array.reduce((min, item) => item < min ? item : min, Infinity);
-}
+const minValue2 = (array) => array.reduce((min, item) => item < min ? item : min, Infinity);
 
-const isContains2 = (array, value) => {
-    return array.includes(value);
-}
+const isContains2 = (array, value) => array.includes(value);
 
 const arr = [];
 const num = 3;
