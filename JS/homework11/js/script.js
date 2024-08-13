@@ -13,7 +13,7 @@ function createProductCard(product) {
             <div class="product-card__description">
                 <h4 class="product-card__title">${product.name}</h4>
                 <p class="product-card__text">${product.description}</p>
-                <div class="product-card__price">${product.price}</div>
+                <div class="product-card__price">$${product.price.toFixed(2)}</div>
             </div>
         `;
     productCard.classList.add("product-card");
