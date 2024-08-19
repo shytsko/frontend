@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/css/product-list.css" />
     <link rel="stylesheet" href="styles/css/advantages.css" />
     <link rel="stylesheet" href="styles/css/home-page.css" />
+    <link rel="stylesheet" href="styles/css/cart-list.css" />
     <title>Home</title>
   </head>
   <body>
@@ -113,8 +114,8 @@
           /></a>
           <a class="header__cart" href="#"
             ><img src="img/icon_cart.svg" alt="cart" />
-            <div class="header__cart-counter">5</div></a
-          >
+            <div class="header__cart-counter"></div
+          ></a>
         </nav>
       </div>
     </header>
@@ -224,6 +225,12 @@
         </article>
       </div>
     </div>
+    <section class="cart">
+      <div class="cart__wrap container">
+        <h3 class="cart__title">Cart Items</h3>
+        <div class="cart__list"></div>
+      </div>
+    </section>
     <section class="subscribe">
       <div class="subscribe__wrap container">
         <div class="subscribe__picture">
@@ -362,6 +369,9 @@
       </div>
     </footer>
     <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product_list_rendering.js"></script>
+    <script src="js/cart_rendering.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
