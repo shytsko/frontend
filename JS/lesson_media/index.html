@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio
+      class="audio"
+      src="https://file-examples.com/storage/fe519944ff66ba53b99c446/2017/11/file_example_MP3_2MG.mp3"
+      controls
+      preload="auto"
+    ></audio>
+    <script>
+      const autioEl = document.querySelector(".audio");
+      autioEl.addEventListener("play", (e) => {
+        console.log("Вы нажали audio play");
+        const { played } = autioEl;
+        console.log(played);
+        for (let i = 0; i < played.length; i++) {
+          console.log(`Played ${played.end(i) - played.start(i)}`);
+        }
+      });
+
+      autioEl.addEventListener("pause", () =>
+        console.log("Вы нажали audio pause")
+      );
+    </script>
+  </body>
+</html>
