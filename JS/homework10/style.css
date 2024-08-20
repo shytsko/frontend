@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  padding: 30px;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.news__title {
+  margin-bottom: 20px;
+}
+
+.news__image {
+  margin: 10px 0;
+  max-height: 300px;
+}
+
+.news__link {
+  margin-top: 30px;
+}

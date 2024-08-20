@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="block">
+      <p>1</p>
+      <p>2</p>
+    </div>
+    <p class="www">text 1</p>
+    <p class="www">text 2</p>
+
+    <a class="link" href="#">link text html</a>
+
+    <img class="photo" src="" alt="" />
+
+    <div class="content"></div>
+
+    <script>
+      // Получите ссылку на первый абзац из дива с id, равным block, выведите его в консоль
+      const paragraph1 = document.querySelector("#block p");
+      console.log(paragraph1);
+
+      //   Получите ссылку на первый абзац с классом www. и вывести его в консоль
+      const paragraph2 = document.querySelector(".www");
+      console.log(paragraph2);
+
+      //   Дан тег <a class="link" href="#">link text html</a>
+      //   Вам необходимо поменять текст внутри ссылки на “link text js”
+      //   Заменить href, на значение https://developer.mozilla.org/ru/
+      const link = document.querySelector(".link");
+      link.textContent = "link text js";
+      link.href = "https://developer.mozilla.org/ru/";
+      console.log(link);
+
+      //   Дан тег <img class="photo" src="" alt="">
+      //   Вам необходимо с помощью js поменять значение src на любое изображение из интернета
+      const photo = document.querySelector(".photo");
+      photo.src =
+        "https://masterpiecer-images.s3.yandex.net/cff61e26969f11ee9b65f6744ca365da:upscaled";
+      console.log(photo);
+
+      //   Дан тег <div class="content"></div>
+      //     Создайте новый элемент p
+      //     Добавьте в него текст “Новый текстовый элемент”
+      //     Добавьте созданный элемент внутри <div class="content"></div>
+      //     Удалите добавленный узел
+      const content = document.querySelector(".content");
+      const newParagraph = document.createElement("p");
+      newParagraph.textContent = "Новый текстовый элемент";
+      content.appendChild(newParagraph);
+      console.log(content);
+      newParagraph.remove();
+      console.log(content);
+
+      //   Создать элемент button, добавить в блок <div class="content"></div>
+      //   При клике на который в консоль выводится сколько раз пользователь нажал на данную кнопку
+      const button = document.createElement("button");
+      button.textContent = "Нажми";
+      let counter = 0;
+      button.onclick = () => console.log(`Кнопка нажата ${++counter} раз`);
+      content.appendChild(button);
+
+      //   Дан тег <div class="content"></div>
+      //     Создайте с помощью javascript новый элемент button
+      //     Добавьте текст для кнопки “Отправить”
+      //     При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”
+      const button2 = document.createElement("button");
+      button2.textContent = "Отправить";
+      button2.onclick = () => (button2.textContent = "Текст отправлен");
+      content.appendChild(button2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form" action="#">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+        eligendi rem reprehenderit labore eveniet, ab odio laborum, eos maiores
+        a ratione nostrum quasi, expedita perferendis molestias nesciunt?
+        Doloribus earum vel ab autem unde velit reiciendis excepturi illum in,
+        rem iste libero quod, accusamus iure voluptate natus ipsa omnis mollitia
+        qui.
+      </p>
+      <input
+        class="form__agree-terms"
+        type="checkbox"
+        name="agree-terms"
+        id="agree-terms"
+      />
+      <label class="form__agree-terms-label" for="agree-terms"
+        >Согласен с условиями</label
+      ><br />
+      <button class="form__submit" type="submit">Отправить</button>
+    </form>
+    <form class="form-drink" action="#">
+      <h2>Выберите напиток</h2>
+      <input
+        class="form-drink__radio"
+        type="radio"
+        name="drink-radio"
+        id="drink-radio-tee"
+        value="Чай"
+      />
+      <label for="drink-radio-tee">Чай</label><br />
+      <input
+        class="form-drink__radio"
+        type="radio"
+        name="drink-radio"
+        id="drink-radio-cofee"
+        value="Кофе"
+      />
+      <label for="drink-radio-cofee">Кофе</label><br />
+      <button class="form-drink__submit" type="submit">Заказать</button>
+    </form>
+    <h1 class="title">Заголовок</h1>
+    <input class="new-title" type="text" />
+    <script>
+      // В html создать элемент checkbox и текст рядом с ним “Согласен с условиями”
+      // Добавить кнопку отправить
+      // При клике на кнопку отправить нужно проверять выбран ли активным элемент checkbox
+      // Если элемент не выбран, добавить текст под чекбоксом “Необходимо согласиться с условиями”
+
+      const agreeTermsCheck = document.querySelector(".form__agree-terms");
+      document.querySelector(".form__submit").addEventListener("click", (e) => {
+        if (!agreeTermsCheck.checked) {
+          e.preventDefault();
+          document
+            .querySelector(".form__agree-terms-label")
+            .insertAdjacentHTML(
+              "afterEnd",
+              "<p>Необходимо согласиться с условиями</p>"
+            );
+        }
+      });
+
+      // В html создать 2 элемента радио кнопки (input type=”radio”) и текст “Чай”, “Кофе” соответственно
+      // Кнопка отправить
+      // Если выбран чай, необходимо вывести сообщение “Чай закончился”
+      // Если выбран кофе, необходимо вывести соообщение “кофе закончился”
+      document
+        .querySelector(".form-drink__submit")
+        .addEventListener("click", (e) => {
+          const selected = document.querySelector(
+            '.form-drink__radio[name="drink-radio"]:checked'
+          );
+          alert(
+            selected != null
+              ? `${selected.value} закончился`
+              : "Вы ничего не выбрали"
+          );
+          e.preventDefault();
+        });
+
+      // Создать поле ввода и под ним заголовок h1 с текстом “Заголовок”
+      // При вводе текста в поле ввода необходимо чтобы текст внутри заголовка менятся на введенный в поле ввода
+      const titleEl = document.querySelector(".title");
+      const newTitleEl = document.querySelector(".new-title");
+      newTitleEl.addEventListener("input", function (e) {
+        titleEl.textContent = newTitleEl.value;
+      });
+    </script>
+  </body>
+</html>
