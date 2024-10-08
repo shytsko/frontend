@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="button-container">
+      <button class="button" id="button-add">Добавить элемент</button>
+      <button class="button" id="button-remove">Удалить элемент</button>
+      <button class="button" id="button-clone">Клонировать элемент</button>
+    </div>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
