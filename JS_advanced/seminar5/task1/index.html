@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .container {
+        max-width: 1180px;
+        padding: 0 20px;
+        margin: 0 auto;
+      }
+
+      .nav-bar {
+        background-color: #222222;
+        color: white;
+      }
+
+      .nav-bar__list {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-bar__item {
+        height: 100%;
+        padding: 10px;
+      }
+
+      .nav-bar__item_backlight {
+        background-color: #555555;
+      }
+
+      .nav-bar__item_active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar container">
+      <ul class="nav-bar__list">
+        <li class="nav-bar__item nav-bar__item_active">Главная</li>
+        <li class="nav-bar__item">О нас</li>
+        <li class="nav-bar__item">Услуги</li>
+        <li class="nav-bar__item">Контакты</li>
+      </ul>
+    </nav>
+    <script>
+      document.querySelectorAll(".nav-bar__item").forEach((elemen) => {
+        elemen.addEventListener("mouseenter", (e) => {
+          e.target.classList.add("nav-bar__item_backlight");
+        });
+
+        elemen.addEventListener("mouseleave", (e) => {
+          e.target.classList.remove("nav-bar__item_backlight");
+        });
+
+        elemen.addEventListener("click", (e) => {
+          document.querySelectorAll(".nav-bar__item").forEach((elemen) => {
+            elemen.classList.remove("nav-bar__item_active");
+          });
+          e.target.classList.add("nav-bar__item_active");
+        });
+      });
+    </script>
+  </body>
+</html>
