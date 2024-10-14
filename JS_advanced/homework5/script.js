@@ -20,7 +20,10 @@ imagesURLs.forEach((element, index) => {
     const newDot = document.createElement('button');
     newDot.classList.add('slider__dot');
     newDot.dataset.index = index;
-    newDot.addEventListener('click', () => showImage(index));
+    newDot.addEventListener('click', () => {
+        currentIndex = index;
+        showImage(currentIndex);
+    });
     dotsEl.append(newDot);
 });
 
