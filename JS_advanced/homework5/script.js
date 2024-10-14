@@ -28,17 +28,13 @@ imagesURLs.forEach((element, index) => {
 });
 
 
-prevButton.addEventListener('click', function (e) {
-    currentIndex--;
-    if (currentIndex < 0)
-        currentIndex = imagesURLs.length - 1;
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + imagesURLs.length - 1) % imagesURLs.length;
     showImage(currentIndex);
 });
 
-nextButton.addEventListener('click', function (e) {
-    currentIndex++;
-    if (currentIndex === imagesURLs.length)
-        currentIndex = 0;
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % imagesURLs.length;
     showImage(currentIndex);
 });
 
