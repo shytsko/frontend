@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="survey-form">
+      <p class="question" data-question-id="question1">
+        Вопрос 1: Какой ваш любимый цвет?
+      </p>
+      <label>
+        <input type="radio" name="question1" />
+        Синий </label
+      ><br />
+      <label>
+        <input type="radio" name="question1" />
+        Зеленый </label
+      ><br />
+      <label>
+        <input type="radio" name="question1" />
+        Красный </label
+      ><br />
+
+      <p class="question" data-question-id="question2">
+        Вопрос 2: Какое ваше любимое животное?
+      </p>
+      <label>
+        <input type="radio" name="question2" />
+        Собака </label
+      ><br />
+      <label>
+        <input type="radio" name="question2" />
+        Кот </label
+      ><br />
+      <label>
+        <input type="radio" name="question2" />
+        Попугай </label
+      ><br />
+      <button type="submit">Завершить опрос</button>
+    </form>
+    <script>
+      const form = document.querySelector(".survey-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const form = e.target;
+
+        const questions = form.querySelectorAll(".question");
+        const answers = [];
+        questions.forEach((question) => {
+          const questionId = question.dataset.questionId;
+          const answerEl = Array.from(form.elements[questionId]).find(
+            (r) => r.checked
+          );
+          const questionText = question.textContent.trim();
+          const answerText = answerEl?.labels[0].textContent.trim();
+          if (answerText) {
+            answers.push([
+              question.textContent.trim(),
+              answerEl?.labels[0].textContent.trim(),
+            ]);
+          } else {
+            alert(`Вы не ответили на вопрос: "${questionText}"`);
+          }
+        });
+
+        if (questions.length === answers.length) {
+          const answersConteiner = document.createElement("div");
+
+          for (const answer of answers) {
+            const answerEl = document.createElement("div");
+            answerEl.insertAdjacentHTML(
+              "afterbegin",
+              `
+            <p>${answer[0]}</p>
+            <p>Ответ ${answer[1]}</p>
+            `
+            );
+            answersConteiner.append(answerEl);
+          }
+          document.body.append(answersConteiner);
+        }
+      });
+    </script>
+  </body>
+</html>
