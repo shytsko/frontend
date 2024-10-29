@@ -1,0 +1,11 @@
+.CounterBox {
+    color: black;
+    background-color: white;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+.CounterBox_dark {
+    color: white;
+    background-color: black;
+}
