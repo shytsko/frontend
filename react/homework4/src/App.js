@@ -1,16 +1,16 @@
-import './App.css';
-import { Route, Routes, BrowserRouter, NavLink } from "react-router-dom"
-import HomePage from './routes/HomePage';
-import AboutPage from './routes/AboutPage';
+import "./App.css";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import HomePage from "./routes/HomePage";
+import AboutPage from "./routes/AboutPage";
+import NavBar from "./components/NavBar";
+import NotFoundtPage from "./routes/NotFoundtPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <nav id="nav" style={{ display: "flex", gap: "10px" }}>
-        <NavLink to="/">Главная</NavLink>
-        <NavLink to="/about">О нас</NavLink>
-      </nav>
+      <NavBar />
       <Routes>
+        <Route path="*" element={<NotFoundtPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
