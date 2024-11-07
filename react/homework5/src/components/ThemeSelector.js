@@ -9,7 +9,7 @@ function ThemeSelector() {
             <h3>Выберите тему</h3>
             <select onChange={(e) => dispatch(toggleTheme(e.target.value))}>
                 {Object.keys(themes).map((theme =>
-                    <option value={theme}>{theme}</option>))}
+                    <option key={theme} value={theme}>{theme}</option>))}
             </select>
         </div>
     );

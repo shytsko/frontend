@@ -5,7 +5,7 @@ const initTheme = { theme: 'light', style: themes['light'] }
 function themeReducer(state = initTheme, action) {
     switch (action.type) {
         case TOGGLE_THEME:
-            return { name: action.theme, style: themes[action.theme] };
+            return { ...state, theme: action.theme, style: themes[action.theme] };
         default:
             return state;
     }
