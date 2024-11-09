@@ -16,7 +16,7 @@ export const productsSlice = createSlice({
                 name: newProduct.name,
                 description: newProduct.description,
                 price: newProduct.price,
-                available: true
+                available: newProduct.available
             }
         },
         deleteProduct: (state, action) => {
