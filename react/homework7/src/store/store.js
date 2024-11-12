@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import todoListReducer from './reducers/todoListReducer'
+import taskListReducer from './reducers/taskListReducer'
 
 
 const loggerMiddleware = (store) => (next) => (action) => {
@@ -12,7 +12,7 @@ const loggerMiddleware = (store) => (next) => (action) => {
 
 export default configureStore({
     reducer: {
-        todoList: todoListReducer
+        taskList: taskListReducer
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(loggerMiddleware),
