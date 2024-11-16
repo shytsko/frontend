@@ -187,8 +187,8 @@ const advantagesItemsInit = [
 
 function Advantages() {
     return (
-        <div class="advantages">
-            <div class="advantages__wrap container">
+        <div className="advantages">
+            <div className="advantages__wrap container">
                 {advantagesItemsInit.map(advantage => <AdvantagesItem key={advantage.title} advantage={advantage} />)}
             </div>
         </div>

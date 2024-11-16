@@ -1,9 +1,9 @@
 function AdvantagesItem({ advantage }) {
     return (
-        <article class="advantages__item">
+        <article className="advantages__item">
             {advantage.icon}
-            <h4 class="advantages__item-title">{advantage.title}</h4>
-            <p class="advantages__item-text">
+            <h4 className="advantages__item-title">{advantage.title}</h4>
+            <p className="advantages__item-text">
                 {advantage.text}
             </p>
         </article>
