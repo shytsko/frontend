@@ -4,6 +4,7 @@ import './styles/index.scss';
 import './styles/header.scss'
 import './styles/menu.scss'
 import './styles/advantages.scss'
+import './styles/subscribe.scss'
 import './styles/footer.scss'
 import App from './App';
 
