@@ -121,11 +121,9 @@ const socialLinksInit = [
 
 
 function NavSocials() {
-    const [links, setLinks] = useState(socialLinksInit);
-
     return (
         <nav className="footer__social-box">
-            {links.map((link) => <a key={link.title} href={link.url}>{link.svg}</a>)}
+            {socialLinksInit.map((link) => <a key={link.title} href={link.url}>{link.svg}</a>)}
         </nav>
     );
 }

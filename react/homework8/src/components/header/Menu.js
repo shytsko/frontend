@@ -3,25 +3,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import MenuItems from "./MenuItems";
 
-const menuInitState = [
+const menuInit = [
     {
         title: "MEN",
         items: ["Accessories", "Bag", "Denim", "T-Shirts"]
     },
     {
         title: "WOMAN",
-        items: ["Accessories", "Jackets &amp; Coats", "Polos", "T-Shirts", "Shirts"]
+        items: ["Accessories", "Jackets & Coats", "Polos", "T-Shirts", "Shirts"]
     },
     {
         title: "KIDS",
-        items: ["Accessories", "Jackets &amp; Coats", "Polos", "T-Shirts", "Shirts", "Bags"]
+        items: ["Accessories", "Jackets & Coats", "Polos", "T-Shirts", "Shirts", "Bags"]
     },
 ];
 
 function Menu() {
-    const [menuItems, setMenuItems] = useState(menuInitState);
-
-
     return (<div className="header__menu">
         <input
             className="header__menu-checkbox"
@@ -37,7 +34,7 @@ function Menu() {
                 <FontAwesomeIcon icon={faXmark} />
             </label>
             <h3 className="menu__title">MENU</h3>
-            {menuItems.map((menu) => <MenuItems key={menu.title} title={menu.title} items={menu.items} />)}
+            {menuInit.map((menu) => <MenuItems key={menu.title} title={menu.title} items={menu.items} />)}
         </nav>
     </div>);
 }
