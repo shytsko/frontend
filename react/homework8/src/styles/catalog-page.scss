@@ -150,28 +150,6 @@
     }
 }
 
-.pagination {
-    border: 1px solid #EBEBEB;
-    display: flex;
-
-    &__button {
-        display: flex;
-        height: 44px;
-        min-width: 32px;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: #5D5D5D;
-        padding: 0 5px;
-
-        &:hover {
-            color: $colorHighlight;
-        }
-    }
-}
-
 @media (max-width: $maxWidthPad) {
     .filter {
         &__wrap {

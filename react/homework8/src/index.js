@@ -8,6 +8,9 @@ import './styles/subscribe.scss'
 import './styles/footer.scss'
 import './styles/home-page.scss'
 import './styles/product-list.scss'
+import './styles/catalog-page.scss'
+import './styles/page-header.scss'
+import './styles/pagination.scss'
 
 import {
   createBrowserRouter,
@@ -16,6 +19,7 @@ import {
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
+import CatalogPage from './pages/CatalogPage';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/catalog",
+        element: <CatalogPage />,
       },
     ],
   },

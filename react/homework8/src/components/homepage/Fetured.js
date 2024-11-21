@@ -1,10 +1,10 @@
 import { allProducts } from "../../data/products";
-import ProductList from "../productslist/ProductList";
+import ProductList from "../common/ProductList";
 
-
-const feturedProducts = allProducts.slice(0, 6);
 
 function Fetured() {
+    const feturedProducts = allProducts.slice(0, 6);
+
     return (
         <section className="fetured-items">
             <div className="fetured-items__wrap container">
