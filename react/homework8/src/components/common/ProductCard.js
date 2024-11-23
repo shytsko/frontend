@@ -14,7 +14,7 @@ function ProductCard({ product }) {
             <div className="product-card__description">
                 <h4 className="product-card__title">{product.title}</h4>
                 <p className="product-card__text">{product.description}</p>
-                <div className="product-card__price">${product.price}</div>
+                <div className="product-card__price">${product.price.toFixed(2)}</div>
             </div>
         </article>);
 }
