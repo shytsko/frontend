@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { allProducts } from "../../data/products";
 import ProductList from "../common/ProductList";
 
 
 function Fetured() {
+    let navigate = useNavigate();
     const feturedProducts = allProducts.slice(0, 6);
 
     return (
@@ -13,7 +15,8 @@ function Fetured() {
                     Shop for items based on what we featured in this week
                 </p>
                 <ProductList products={feturedProducts} />
-                <button className="fetured-items__button">Browse All Product</button>
+                <button className="fetured-items__button animate-button"
+                    onClick={() => navigate('/catalog')}>Browse All Product</button>
             </div>
         </section>
 
