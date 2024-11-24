@@ -1,14 +1,14 @@
 import Pagination from "./Pagination";
 import ProductCard from "./ProductCard";
 
-function ProductList({ products }) {
+function ProductList({ products, pagination = null }) {
     console.log(products);
     return (
         <>
             <div className="product-list">
                 {products.map((product => <ProductCard key={product.id} product={product} />))}
             </div>
-            <Pagination currentPage={1} totalPages={20} />
+            {pagination && <Pagination currentPage={pagination.page} totalPages={pagination.totalPages} />}
         </>
     );
 }

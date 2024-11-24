@@ -25,7 +25,7 @@ function CatalogPage() {
                 ? <>
                     <section class="catalog">
                         <div class="catalog__wrap container">
-                            <ProductList products={products} />
+                            <ProductList products={products} pagination={{ page: 10, totalPages: 20 }} />
                         </div>
                     </section>
                 </>

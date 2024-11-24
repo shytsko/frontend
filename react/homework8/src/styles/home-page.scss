@@ -133,26 +133,7 @@
         background-color: #ffffff;
     }
 
-    &__pagination {
-        border: 1px solid #EBEBEB;
-        display: flex;
-        margin-bottom: 36px;
 
-        &__button {
-            @include flex-center;
-            height: 44px;
-            min-width: 44px;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            color: #5D5D5D;
-            padding: 0 5px;
-
-            &:hover {
-                color: $colorHighlight;
-            }
-        }
-    }
 }
 
 @media (max-width: $maxWidthPad) {

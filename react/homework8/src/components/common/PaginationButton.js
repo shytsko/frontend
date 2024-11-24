@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function PaginationButton({ toPage, children, active = false }) {
     return (
-        <Link to={""} className={`pagination__button${active ? " pagination__button_active" : ""}`} children={children} />
+        <Link to={toPage} className={`pagination__button${active ? " pagination__button_active" : ""}`} children={children} />
     );
 }
 
