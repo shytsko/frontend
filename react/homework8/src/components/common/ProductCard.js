@@ -5,7 +5,7 @@ function ProductCard({ product }) {
             <div className="product-card__img">
                 <img src={product.imgURL} alt="Catalog image" />
                 <div className="product-card__filter">
-                    <button className="product-card__add-cart-button">
+                    <button className="product-card__add-cart-button animate-button">
                         <img src="img/icon_cart.svg" width={26} alt="Cart" />
                         Add to Cart
                     </button>
