@@ -1,11 +1,18 @@
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../store/reducers/cartSlice";
+
 function ProductCard({ product }) {
+    const dispatch = useDispatch();
+
     console.log(product);
     return (
         <article className="product-card">
             <div className="product-card__img">
                 <img src={product.imgURL} alt="Catalog image" />
                 <div className="product-card__filter">
-                    <button className="product-card__add-cart-button animate-button">
+                    <button
+                        onClick={() => dispatch(addToCart(product))}
+                        className="product-card__add-cart-button animate-button">
                         <img src="img/icon_cart.svg" width={26} alt="Cart" />
                         Add to Cart
                     </button>
