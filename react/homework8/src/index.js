@@ -13,6 +13,7 @@ import './styles/catalog-page.scss'
 import './styles/page-header.scss'
 import './styles/pagination.scss'
 import './styles/product-page.scss'
+import './styles/cart-page.scss'
 
 import {
   createBrowserRouter,
@@ -25,6 +26,7 @@ import ErrorPage from './routes/ErrorPage';
 import HomePage from './routes/HomePage';
 import CatalogPage from './routes/CatalogPage';
 import ProductPage from './routes/ProductPage';
+import CartPage from './routes/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/product/:productId",
         element: <ProductPage />,
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
       },
     ],
   },

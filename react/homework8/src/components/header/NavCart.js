@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import CartQuantity from "./CartQuantity";
 
 function NavCart() {
     return (
-        <a className="header__cart" href="#">
+        <Link className="header__cart" to={"/cart"}>
             <img src="/img/icon_cart.svg" alt="cart" />
             <CartQuantity />
-        </a>
+        </Link>
     );
 }
 
