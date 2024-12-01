@@ -3,6 +3,7 @@ import { json } from "react-router-dom";
 import PageHeader from "../components/common/PageHeader";
 import { useDispatch, useSelector } from 'react-redux'
 import ProductDetails from "../components/product/ProductDetails";
+import OtherProducts from "../components/product/OtherProducts";
 
 function ProductPage() {
     let { productId } = useParams();
@@ -19,6 +20,7 @@ function ProductPage() {
     return (
         <>
             <ProductDetails product={product} />
+            <OtherProducts />
         </>
     );
 }
