@@ -5,7 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import ProductDetails from "../components/product/ProductDetails";
 
 function ProductPage() {
-    const { productId } = useParams();
+    let { productId } = useParams();
+    productId = Number(productId);
     const product = useSelector((state) => state.products.data.find((prod) => prod.id === productId));
 
     if (product === undefined)

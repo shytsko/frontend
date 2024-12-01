@@ -1,6 +1,6 @@
 export const allProducts = [
     {
-        id: "1",
+        id: 1,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -10,7 +10,7 @@ export const allProducts = [
         size: "XS"
     },
     {
-        id: "2",
+        id: 2,
         title: "ELLERY X M'O CAPSULE",
         collection: "WOMEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -20,7 +20,7 @@ export const allProducts = [
         size: "S"
     },
     {
-        id: "3",
+        id: 3,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -30,7 +30,7 @@ export const allProducts = [
         size: "XS"
     },
     {
-        id: "4",
+        id: 4,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -40,7 +40,7 @@ export const allProducts = [
         size: "M"
     },
     {
-        id: "5",
+        id: 5,
         title: "ELLERY X M'O CAPSULE",
         collection: "WOMEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -50,7 +50,7 @@ export const allProducts = [
         size: "L"
     },
     {
-        id: "6",
+        id: 6,
         title: "ELLERY X M'O CAPSULE",
         collection: "WOMEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -60,7 +60,7 @@ export const allProducts = [
         size: "M"
     },
     {
-        id: "7",
+        id: 7,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -70,7 +70,7 @@ export const allProducts = [
         size: "L"
     },
     {
-        id: "8",
+        id: 8,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -80,7 +80,7 @@ export const allProducts = [
         size: "S"
     },
     {
-        id: "9",
+        id: 9,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -90,7 +90,7 @@ export const allProducts = [
         size: "XS"
     },
     {
-        id: "10",
+        id: 10,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -100,7 +100,7 @@ export const allProducts = [
         size: "S"
     },
     {
-        id: "11",
+        id: 11,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
@@ -110,7 +110,7 @@ export const allProducts = [
         size: "M"
     },
     {
-        id: "12",
+        id: 12,
         title: "ELLERY X M'O CAPSULE",
         collection: "MEN",
         description: `Known for her sculptural takes on traditional tailoring,
