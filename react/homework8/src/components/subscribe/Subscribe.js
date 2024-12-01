@@ -7,7 +7,7 @@ function Subscribe() {
                 <div className="subscribe__picture">
                     <img
                         className="subscribe__photo"
-                        src="img/subscribe_photo.png"
+                        src="/img/subscribe_photo.png"
                         alt="Subscribe photo"
                     />
                     <p className="subscribe__text">

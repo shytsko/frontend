@@ -1,7 +1,7 @@
 function SearchBar() {
     return (
         <a href="#">
-            <img src="img/icon_search.svg" alt="search" />
+            <img src="/img/icon_search.svg" alt="search" />
         </a>
     );
 }

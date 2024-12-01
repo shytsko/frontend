@@ -26,7 +26,7 @@ function Menu() {
             id="menu"
         />
         <label htmlFor="menu">
-            <img src="img/icon_menu.svg" alt="menu" />
+            <img src="/img/icon_menu.svg" alt="menu" />
         </label>
         <nav className="menu">
             <label className="menu__close" htmlFor="menu">
