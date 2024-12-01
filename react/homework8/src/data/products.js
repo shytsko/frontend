@@ -7,7 +7,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 14.00,
         imgURL: "/img/catalog_img_1.png",
-        size: "XS"
+        size: "XS",
+        color: "red",
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 22.00,
         imgURL: "/img/catalog_img_2.png",
-        size: "S"
+        size: "S",
+        color: "red",
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 144.00,
         imgURL: "/img/catalog_img_3.png",
-        size: "XS"
+        size: "XS",
+        color: "red",
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 561.00,
         imgURL: "/img/catalog_img_4.png",
-        size: "M"
+        size: "M",
+        color: "red",
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 32.00,
         imgURL: "/img/catalog_img_5.png",
-        size: "L"
+        size: "L",
+        color: "red",
     },
     {
         id: 6,
@@ -57,7 +62,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 33.00,
         imgURL: "/img/catalog_img_6.png",
-        size: "M"
+        size: "M",
+        color: "red",
     },
     {
         id: 7,
@@ -67,7 +73,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 44.00,
         imgURL: "/img/catalog_img_7.png",
-        size: "L"
+        size: "L",
+        color: "red",
     },
     {
         id: 8,
@@ -77,7 +84,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 76.00,
         imgURL: "/img/catalog_img_8.png",
-        size: "S"
+        size: "S",
+        color: "red",
     },
     {
         id: 9,
@@ -87,7 +95,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 38.00,
         imgURL: "/img/catalog_img_9.png",
-        size: "XS"
+        size: "XS",
+        color: "red",
     },
     {
         id: 10,
@@ -97,7 +106,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 78.00,
         imgURL: "/img/catalog_img_10.png",
-        size: "S"
+        size: "S",
+        color: "red",
     },
     {
         id: 11,
@@ -107,7 +117,8 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 65.00,
         imgURL: "/img/catalog_img_11.png",
-        size: "M"
+        size: "M",
+        color: "red",
     },
     {
         id: 12,
@@ -117,6 +128,7 @@ export const allProducts = [
             Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`,
         price: 56.00,
         imgURL: "/img/catalog_img_12.png",
-        size: "L"
+        size: "L",
+        color: "red",
     },
 ]
