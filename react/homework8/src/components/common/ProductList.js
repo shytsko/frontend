@@ -2,7 +2,6 @@ import Pagination from "./Pagination";
 import ProductCard from "./ProductCard";
 
 function ProductList({ products, pagination = null }) {
-    console.log(products);
     return (
         <>
             <div className="product-list">

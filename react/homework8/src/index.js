@@ -12,6 +12,7 @@ import './styles/product-list.scss'
 import './styles/catalog-page.scss'
 import './styles/page-header.scss'
 import './styles/pagination.scss'
+import './styles/product-page.scss'
 
 import {
   createBrowserRouter,
@@ -23,6 +24,7 @@ import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
+import ProductPage from './pages/ProductPage';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/catalog",
         element: <CatalogPage />,
+      },
+      {
+        path: "/product/:productId",
+        element: <ProductPage />,
       },
     ],
   },
