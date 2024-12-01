@@ -21,10 +21,10 @@ import {
 import { Provider } from 'react-redux'
 import { store } from './store/store';
 import App from './App';
-import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
-import CatalogPage from './pages/CatalogPage';
-import ProductPage from './pages/ProductPage';
+import ErrorPage from './routes/ErrorPage';
+import HomePage from './routes/HomePage';
+import CatalogPage from './routes/CatalogPage';
+import ProductPage from './routes/ProductPage';
 
 const router = createBrowserRouter([
   {
