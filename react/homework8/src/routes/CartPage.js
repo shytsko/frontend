@@ -6,6 +6,7 @@ import FormCheckout from "../components/cart/FormCheckout";
 
 function CartPage() {
     const products = useSelector((state) => state.cart.items);
+    const totalAmount = products.reduce((sum, item) => sum + item.quantity * item.price, 0)
 
     return (
         <>
@@ -15,7 +16,7 @@ function CartPage() {
                     <CartList products={products} />
                     <div className="forms-box">
                         <FormShippin />
-                        <FormCheckout subTotalAmount={900} grandTotalAmaunt={900} />
+                        <FormCheckout subTotalAmount={totalAmount} grandTotalAmaunt={totalAmount} />
                     </div>
                 </div>
             </section></>

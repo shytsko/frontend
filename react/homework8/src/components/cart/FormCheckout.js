@@ -1,6 +1,6 @@
 function FormCheckout({ subTotalAmount, grandTotalAmaunt }) {
     return (
-        <form className="form-checkout">
+        <form className="form-checkout" onSubmit={(e) => { e.preventDefault(); }}>
             <p className="form-checkout__subtotal">
                 SUB TOTAL<span>${subTotalAmount.toFixed(2)}</span>
             </p>
@@ -8,7 +8,7 @@ function FormCheckout({ subTotalAmount, grandTotalAmaunt }) {
                 GRAND TOTAL<span>${grandTotalAmaunt.toFixed(2)}</span>
             </p>
             <div className="form-checkout__separator" />
-            <button className="form-checkout__button animate-button" type="submit">
+            <button className="form-checkout__button animate-button">
                 PROCEED TO CHECKOUT
             </button>
         </form>
