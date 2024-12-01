@@ -19,6 +19,7 @@ function ProductPage() {
 
     return (
         <>
+            <PageHeader title={'NEW ARRIVALS'} breadcrumbs={['HOME', 'MEN', 'NEW ARRIVALS']} />
             <ProductDetails product={product} />
             <OtherProducts />
         </>
