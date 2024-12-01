@@ -1,4 +1,9 @@
+import { useDispatch } from "react-redux";
+import { changeQuantity, removeFromCart } from "../../store/reducers/cartSlice";
+
 function CartItem({ product }) {
+    const dispatch = useDispatch();
+
     return (
         <article className="cart__item">
             <img
@@ -20,11 +25,16 @@ function CartItem({ product }) {
                         id={`quantity-item-${product.id}`}
                         type="number"
                         value={product.quantity}
-                        min={0}
+                        min={1}
+                        onChange={(e) => { dispatch(changeQuantity({ id: product.id, newQuantity: Number(e.target.value) })) }}
                     />
                 </p>
             </div>
-            <button className="cart__item-del" id="delete-item1">
+            <button
+                className="cart__item-del"
+                id={`delete-item-${product.id}`}
+                onClick={() => { dispatch(removeFromCart({ id: product.id })) }}
+            >
                 <svg
                     viewBox="0 0 18 18"
                     fill="none"

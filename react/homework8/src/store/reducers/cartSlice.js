@@ -23,7 +23,7 @@ export const cartSlice = createSlice({
         changeQuantity: (state, action) => {
             const product = state.items.find((item) => item.id === action.payload.id);
             if (product) {
-                product.count = action.payload.newCount;
+                product.quantity = action.payload.newQuantity > 1 ? action.payload.newQuantity : 1;
             }
         },
         clearCart: (state) => {
