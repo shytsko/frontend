@@ -19,8 +19,8 @@ function CartPage() {
                         <FormCheckout subTotalAmount={totalAmount} grandTotalAmaunt={totalAmount} />
                     </div>
                 </div>
-            </section></>
-
+            </section>
+        </>
     );
 }
 
