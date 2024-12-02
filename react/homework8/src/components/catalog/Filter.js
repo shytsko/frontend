@@ -1,4 +1,8 @@
-function Filter() {
+function Filter({ setSizeFilter }) {
+    function handleSetSizeFilter(e) {
+        setSizeFilter(e.target.value, e.target.checked)
+    }
+
     return (<div className="filter">
         <div className="filter__wrap container">
             <details className="filter__details no-select">
@@ -94,19 +98,19 @@ function Filter() {
                         <summary className="filter-sort__summary">SIZE</summary>
                         <div className="filter-sort__item-content">
                             <div className="filter-sort__item-checkbox">
-                                <input type="checkbox" name="sort-size_xs" id="sort-size_xs" />
+                                <input type="checkbox" name="sort-size_xs" id="sort-size_xs" value="XS" onChange={handleSetSizeFilter} />
                                 <label htmlFor="sort-size_xs">XS</label>
                             </div>
                             <div className="filter-sort__item-checkbox">
-                                <input type="checkbox" name="sort-size_s" id="sort-size_s" />
+                                <input type="checkbox" name="sort-size_s" id="sort-size_s" value="S" onChange={handleSetSizeFilter} />
                                 <label htmlFor="sort-size_s">S</label>
                             </div>
                             <div className="filter-sort__item-checkbox">
-                                <input type="checkbox" name="sort-size_m" id="sort-size_m" />
+                                <input type="checkbox" name="sort-size_m" id="sort-size_m" value="M" onChange={handleSetSizeFilter} />
                                 <label htmlFor="sort-size_m">M</label>
                             </div>
                             <div className="filter-sort__item-checkbox">
-                                <input type="checkbox" name="sort-size_l" id="sort-size_l" />
+                                <input type="checkbox" name="sort-size_l" id="sort-size_l" value="L" onChange={handleSetSizeFilter} />
                                 <label htmlFor="sort-size_l">L</label>
                             </div>
                         </div>
