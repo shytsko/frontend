@@ -14,6 +14,7 @@ import './styles/page-header.scss'
 import './styles/pagination.scss'
 import './styles/product-page.scss'
 import './styles/cart-page.scss'
+import './styles/registration-page.scss'
 
 import {
   createBrowserRouter,
@@ -27,6 +28,7 @@ import HomePage from './routes/HomePage';
 import CatalogPage from './routes/CatalogPage';
 import ProductPage from './routes/ProductPage';
 import CartPage from './routes/CartPage';
+import RegistrationPage from './routes/RegistrationPage';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <CartPage />,
+      },
+      {
+        path: "/registration",
+        element: <RegistrationPage />,
       },
     ],
   },

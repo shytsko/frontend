@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 function NavProfile() {
-    return (<a className="header__profile" href="#">
-        <img src="/img/icon_profile.svg" alt="profile" />
-    </a>);
+    return (
+        <Link className="header__profile" to={"/registration"}>
+            <img src="/img/icon_profile.svg" alt="profile" />
+        </Link>);
 }
 
 export default NavProfile;
