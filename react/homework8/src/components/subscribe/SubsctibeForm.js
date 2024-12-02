@@ -1,3 +1,5 @@
+import { Form } from "react-router-dom";
+
 function SubsctibeForm() {
     return (
         <div className="subscribe__form-box">
@@ -5,7 +7,9 @@ function SubsctibeForm() {
             <h3 className="subscribe__form-subtitle">
                 FOR OUR NEWLETTER AND PROMOTION
             </h3>
-            <form className="subscribe__form" action="#">
+            <Form
+                className="subscribe__form"
+                onSubmit={(e) => { e.preventDefault(); }}>
                 <input
                     type="email"
                     name="email"
@@ -15,7 +19,7 @@ function SubsctibeForm() {
                 <button type="submit" className="subscribe__button-submit">
                     Subscribe
                 </button>
-            </form>
+            </Form>
         </div>
     );
 }

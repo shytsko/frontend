@@ -1,6 +1,8 @@
+import { Form } from "react-router-dom";
+
 function FormCheckout({ subTotalAmount, grandTotalAmaunt }) {
     return (
-        <form className="form-checkout" onSubmit={(e) => { e.preventDefault(); }}>
+        <Form className="form-checkout" onSubmit={(e) => { e.preventDefault(); }}>
             <p className="form-checkout__subtotal">
                 SUB TOTAL<span>${subTotalAmount.toFixed(2)}</span>
             </p>
@@ -11,7 +13,7 @@ function FormCheckout({ subTotalAmount, grandTotalAmaunt }) {
             <button className="form-checkout__button animate-button">
                 PROCEED TO CHECKOUT
             </button>
-        </form>
+        </Form>
     );
 }
 
