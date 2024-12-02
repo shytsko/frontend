@@ -3,12 +3,12 @@ import Filter from "../components/catalog/Filter";
 import PageHeader from "../components/common/PageHeader";
 import ProductList from "../components/common/ProductList";
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
+import '../styles/catalog-page.scss'
 
 function CatalogPage() {
     const products = useSelector((state) => state.products.data);
     const [filter, setFilter] = useState([]);
-
 
     return (
         <>

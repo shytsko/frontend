@@ -1,6 +1,7 @@
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuItems from "./MenuItems";
+import '../../styles/menu.scss'
 
 const menuInit = [
     {

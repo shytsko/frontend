@@ -3,6 +3,7 @@ import CartList from "../components/cart/CartList";
 import PageHeader from "../components/common/PageHeader";
 import FormShippin from "../components/cart/FormShippin";
 import FormCheckout from "../components/cart/FormCheckout";
+import '../styles/cart-page.scss'
 
 function CartPage() {
     const products = useSelector((state) => state.cart.items);

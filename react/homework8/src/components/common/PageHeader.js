@@ -1,4 +1,5 @@
 import BreadCrumbs from "./BreadCrumbs";
+import '../../styles/page-header.scss'
 
 function PageHeader({ title, breadcrumbs }) {
     return (

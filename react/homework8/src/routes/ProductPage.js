@@ -4,6 +4,7 @@ import PageHeader from "../components/common/PageHeader";
 import { useDispatch, useSelector } from 'react-redux'
 import ProductDetails from "../components/product/ProductDetails";
 import OtherProducts from "../components/product/OtherProducts";
+import '../styles/product-page.scss'
 
 function ProductPage() {
     let { productId } = useParams();

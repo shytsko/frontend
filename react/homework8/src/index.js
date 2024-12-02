@@ -1,25 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/general.scss';
 import './styles/index.scss';
-import './styles/header.scss'
-import './styles/menu.scss'
-import './styles/advantages.scss'
-import './styles/subscribe.scss'
-import './styles/footer.scss'
-import './styles/home-page.scss'
-import './styles/product-list.scss'
-import './styles/catalog-page.scss'
-import './styles/page-header.scss'
-import './styles/pagination.scss'
-import './styles/product-page.scss'
-import './styles/cart-page.scss'
-import './styles/registration-page.scss'
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import { Provider } from 'react-redux'
 import { store } from './store/store';
 import App from './App';

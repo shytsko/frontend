@@ -1,6 +1,7 @@
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PaginationButton from "./PaginationButton";
+import '../../styles/pagination.scss'
 
 function Pagination({ currentPage, totalPages }) {
     let startPage = currentPage - 2;

@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 summary {
   display: block;
 }

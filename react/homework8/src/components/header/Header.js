@@ -1,5 +1,6 @@
 import NavLeft from './NavLeft';
 import NavRight from './NavRight';
+import '../../styles/header.scss'
 
 
 function Header() {

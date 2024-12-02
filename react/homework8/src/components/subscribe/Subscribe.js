@@ -1,4 +1,5 @@
 import SubsctibeForm from "./SubsctibeForm";
+import '../../styles/subscribe.scss'
 
 function Subscribe() {
     return (

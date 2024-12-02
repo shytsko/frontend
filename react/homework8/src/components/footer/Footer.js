@@ -1,5 +1,6 @@
 import Copyright from "./Copyright";
 import NavSocials from "./NavSocials";
+import '../../styles/footer.scss'
 
 function Footer() {
     return (

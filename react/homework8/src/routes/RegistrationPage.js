@@ -1,5 +1,6 @@
 import { Form } from "react-router-dom";
 import PageHeader from "../components/common/PageHeader";
+import '../styles/registration-page.scss'
 
 function RegistrationPage() {
     return (

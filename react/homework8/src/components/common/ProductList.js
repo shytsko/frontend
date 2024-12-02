@@ -1,5 +1,6 @@
 import Pagination from "./Pagination";
 import ProductCard from "./ProductCard";
+import '../../styles/product-list.scss'
 
 function ProductList({ products, pagination = null }) {
     return (

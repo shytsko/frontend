@@ -1,4 +1,5 @@
 import AdvantagesItem from "./AdvantagesItem";
+import '../../styles/advantages.scss'
 
 const advantagesItemsInit = [
     {
