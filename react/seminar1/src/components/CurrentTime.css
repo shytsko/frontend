@@ -1,0 +1,7 @@
+.CurrentTime span {
+    color: red;
+}
+
+.CurrentDate span {
+    color: green;
+}
